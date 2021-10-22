@@ -1,41 +1,31 @@
-from figures_2d import *
-from figures_3d import *
+from logic import *
 
 
-fig_list = ["Круг", "Квадрат", "Прямоугольник", "Треугольник", "Трапеция", "Ромб",
-            "Сфера", "Куб", "Параллелепипед", "Пирамида", "Цилиндр", "Конус"]
+action_idx = 1
 
-
-fig_dict = {"Круг": Circle, "Квадрат": Square, "Прямоугольник": Rectangle,
-            "Треугольник": Triangle, "Трапеция": Trapezoid, "Ромб": Rhombus,
-            "Сфера": Sphere, "Куб": Cube, "Параллелепипед": Parallelepiped,
-            "Пирамида": Pyramid, "Цилиндр": Cylinder, "Конус": Cone}
-
-
-print("Здравствуйте! Вас приветствует Геометрический калькулятор!")
-# TODO добавить выбор функционала
-print("Список доступных фигур:")
-for idx, figure in enumerate(fig_list, 1):
-    print(f"{idx}. {figure}")
+print("Здравствуйте! Вас приветствует Геометрический калькулятор!\n")
 
 while True:
-    try:
-        fig_idx = int(input("Введите номер выбранной фигуры: "))
-        assert 1 <= fig_idx <= len(fig_list)
+    if action_idx == 1:  # Выбрать фигуру
+        print_list_of_available_figures()
+        fig_idx = select_figure()
+        selected_fig = fig_dict[fig_list[fig_idx - 1]]
+        fig_vars = get_figure_parameters(selected_fig)
+        user_fig = selected_fig(*fig_vars)
+        method_list, operation_idx = get_methods_list(selected_fig)
+        execute_method(user_fig, method_list, operation_idx)
+        action_idx = determine_next_action()
+
+    elif action_idx == 2:  # Изменить параметры ранее выбранной фигуры
+        fig_vars = get_figure_parameters(selected_fig)
+        user_fig = selected_fig(*fig_vars)
+        action_idx = determine_next_action()
+    
+    elif action_idx == 3:  # Выполнить другую операцию с ранее выбранной фигурой
+        method_list, operation_idx = get_methods_list(selected_fig)
+        execute_method(user_fig, method_list, operation_idx)
+        action_idx = determine_next_action()
+
+    else:
+        print("Спасибо за использование Геометрического калькулятора!")
         break
-    except ValueError:
-        print("Неверное значение. Повторите ввод.")
-    except AssertionError:
-        print("Введенный номер не соответствует диапазону допустимых значений.")
-
-# print(f'Выбранная Вами фигура - "{fig_list[fig_idx - 1]}"')
-print(f'Выбранная Вами фигура - "{fig_dict[fig_list[fig_idx - 1]]}"')
-# TODO добавить введение сторон фигуры
-for var in fig_dict[fig_list[fig_idx - 1]].__annotations__:
-    print(var)
-print(fig_dict[fig_list[fig_idx - 1]])
-# TODO добавить список операций для фигур
-print("Для данной фигуры доступны следующие операции:")
-
-user_fig = fig_dict[fig_list[fig_idx - 1]]()
-print(user_fig)

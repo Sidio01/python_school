@@ -1,51 +1,83 @@
-from abstract_figures import Figure_2D
+from math import pi
+from abstract_figures import Figure
 
 
-class Circle(Figure_2D):
+class Circle(Figure):
     """Круг."""
-    # Характеристики: Радиус
+    r: float
 
-    # Площадь круга = пи * радиус**2
-    # Периметр (длина окружности) = 2* пи * радиус
-    pass
+    def __init__(self, r: float) -> None:
+        self.r = r
+
+    def area(self) -> float:
+        """Вычисление площади."""
+        return pi * self.r ** 2
+
+    def perimeter(self) -> float:
+        """Вычисление периметра (длины окружности)."""
+        return 2 * pi * self.r
+
+    def diameter(self) -> float:
+        """Вычисление диаметра."""
+        return self.r * 2
 
 
-class Square(Figure_2D):
+class Square(Figure):
     """Квадрат."""
-    x: int
-    # Характеристики: одна сторона (все равны)
+    x: float
 
-    # Площадь = сторона**2
-    # Периметр = 2* пи * радиус
-    # Диагональ = 2 ** 0,5 * сторона
-    # Диагонали делят углы пополам
-    # Диагонали пересекаются под прямым углом
-    def __init__(self, x: int) -> None:
-        super().__init__()
+    def __init__(self, x: float) -> None:
         self.x = x
 
-    def area(self):
+    def area(self) -> float:
+        """Вычисление площади."""
         return self.x ** 2
 
-    def perimeter(self):
+    def perimeter(self) -> float:
+        """Вычисление периметра."""
         return self.x * 4
+    
+    def diagonal(self) -> float:
+        """Вычисление длины диагонали."""
+        return 2 ** 0.5 * self.x
 
 
-class Rectangle(Figure_2D):
+class Rectangle(Square):
     """Прямоугольник."""
-    pass
+    x: float
+    y: float
+    
+    def __init__(self, x: float, y: float) -> None:
+        super().__init__(x)
+        self.y = y
+
+    def area(self) -> float:
+        """Вычисление площади."""
+        return self.x * self.y
+
+    def perimeter(self) -> float:
+        """Вычисление периметра."""
+        return (self.x + self.y) * 2
+
+    def diagonal(self) -> float:
+        """Вычисление длины диагонали."""
+        return (self.x ** 2 + self.y ** 2) ** 0.5
+    
+    def radius(self) -> float:
+        """Вычисление радиуса описанной окружности."""
+        return (self.x ** 2 + self.y ** 2) ** 0.5 / 2
 
 
-class Triangle(Figure_2D):
+class Triangle(Figure): #TODO описать класс
     """Треугольник."""
     pass
 
 
-class Trapezoid(Figure_2D):
+class Trapezoid(Figure): #TODO описать класс
     """Трапеция."""
     pass
 
 
-class Rhombus(Figure_2D):
+class Rhombus(Figure): #TODO описать класс
     """Ромб."""
     pass
