@@ -1,4 +1,4 @@
-from math import pi
+from math import cos, pi, sin, degrees
 from abstract_figures import Figure
 
 
@@ -24,60 +24,142 @@ class Circle(Figure):
 
 class Square(Figure):
     """Квадрат."""
-    x: float
+    a: float
 
-    def __init__(self, x: float) -> None:
-        self.x = x
+    def __init__(self, a: float) -> None:
+        self.a = a
 
     def area(self) -> float:
         """Вычисление площади."""
-        return self.x ** 2
+        return self.a ** 2
 
     def perimeter(self) -> float:
         """Вычисление периметра."""
-        return self.x * 4
-    
+        return self.a * 4
+
     def diagonal(self) -> float:
         """Вычисление длины диагонали."""
-        return 2 ** 0.5 * self.x
+        return 2 ** 0.5 * self.a
 
 
 class Rectangle(Square):
     """Прямоугольник."""
-    x: float
-    y: float
-    
-    def __init__(self, x: float, y: float) -> None:
-        super().__init__(x)
-        self.y = y
+    a: float
+    b: float
+
+    def __init__(self, a: float, b: float) -> None:
+        super().__init__(a)
+        self.b = b
 
     def area(self) -> float:
         """Вычисление площади."""
-        return self.x * self.y
+        return self.a * self.b
 
     def perimeter(self) -> float:
         """Вычисление периметра."""
-        return (self.x + self.y) * 2
+        return (self.a + self.b) * 2
 
     def diagonal(self) -> float:
         """Вычисление длины диагонали."""
-        return (self.x ** 2 + self.y ** 2) ** 0.5
-    
+        return (self.a ** 2 + self.b ** 2) ** 0.5
+
     def radius(self) -> float:
         """Вычисление радиуса описанной окружности."""
-        return (self.x ** 2 + self.y ** 2) ** 0.5 / 2
+        return (self.a ** 2 + self.b ** 2) ** 0.5 / 2
 
 
-class Triangle(Figure): #TODO описать класс
+class Triangle(Figure):
     """Треугольник."""
-    pass
+    a: float
+    b: float
+    c: float
+
+    def __init__(self, a: float, b: float, c: float) -> None:
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def area(self) -> float:
+        """Вычисление площади."""
+        p = self.perimeter() / 2
+        return (p * (p - self.a) * (p - self.b) * (p - self.c)) ** 0.5
+
+    def perimeter(self) -> float:
+        """Вычисление периметра."""
+        return self.a + self.b + self.c
+
+    def altitude_on_a(self) -> float:
+        """Вычисление высоты, опущенной на сторону 'a'."""
+        p = self.perimeter() / 2
+        return (2 * (p * (p - self.a) * (p - self.b) * (p - self.c)) ** 0.5) / self.a
+
+    def altitude_on_b(self) -> float:
+        """Вычисление высоты, опущенной на сторону 'b'."""
+        p = self.perimeter() / 2
+        return (2 * (p * (p - self.a) * (p - self.b) * (p - self.c)) ** 0.5) / self.b
+
+    def altitude_on_c(self) -> float:
+        """Вычисление высоты, опущенной на сторону 'c'."""
+        p = self.perimeter() / 2
+        return (2 * (p * (p - self.a) * (p - self.b) * (p - self.c)) ** 0.5) / self.c
 
 
-class Trapezoid(Figure): #TODO описать класс
-    """Трапеция."""
-    pass
+class Trapezoid(Figure):
+    """Трапеция. Основаниями выступают 'а' и 'с'."""
+    a: float
+    b: float
+    c: float
+    d: float
+
+    def __init__(self, a: float, b: float, c: float, d: float) -> None:
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
+
+    def area(self) -> float:
+        """Вычисление площади."""
+        m = self.midsegment()
+        return m * (self.a ** 2 - (((self.d - self.b) ** 2 + self.a ** 2 - self.c ** 2) / (2 * (self.d - self.b))) ** 2) ** 0.5
+
+    def perimeter(self) -> float:
+        """Вычисление периметра."""
+        return self.a + self.b + self.c + self.d
+
+    def midsegment(self) -> float:
+        """Вычисление средней линии."""
+        return (self.b + self.d) / 2
 
 
-class Rhombus(Figure): #TODO описать класс
+class Rhombus(Square):
     """Ромб."""
-    pass
+    a: float
+    h: float
+
+    def __init__(self, a: float, h: float) -> None:
+        super().__init__(a)
+        self.h = h
+
+    def area(self) -> float:
+        """Вычисление площади."""
+        return self.a * self.h
+
+    def perimeter(self) -> float:
+        """Вычисление периметра."""
+        return self.a * 4
+
+    def angle_alpha(self) -> float:
+        """Вычисление острого угла."""
+        return degrees(sin(self.h / self.a))
+
+    def angle_beta(self) -> float:
+        """Вычисление тупого угла."""
+        return 180 - self.angle_alpha()
+
+    def diagonal(self) -> float:
+        """Вычисление диагонали."""
+        return self.a * sin(self.angle_alpha() / 2)
+
+    def reverse_diagonal(self) -> float:
+        """Вычисление обратной диагонали."""
+        return self.a * cos(self.angle_alpha() / 2)
