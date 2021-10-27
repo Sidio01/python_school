@@ -1,0 +1,165 @@
+[
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 1,
+              // TODO обновить данные
+      "fields": {
+        "recipe_id": "Темный шоколад",
+        "ingredient_id": "г.",
+        "amount": "Темный шоколад"
+      }
+    },
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 2,
+      "fields": {
+        "name": "Сливочное масло",
+        "measure": "г."
+      }
+    },
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 3,
+      "fields": {
+        "name": "Коричневый сахар",
+        "measure": "г."
+      }
+    },
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 4,
+      "fields": {
+        "name": "Куриное яйцо",
+        "measure": "шт."
+      }
+    },
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 5,
+      "fields": {
+        "name": "Пшеничная мука",
+        "measure": "г."
+      }
+    },
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 6,
+      "fields": {
+        "name": "Грецкие орехи",
+        "measure": "г."
+      }
+    },
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 7,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 8,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 9,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+    {
+      "model": "recipebook.recipesingredients",
+      "pk": 10,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 11,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 12,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 13,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 14,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 15,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 16,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 17,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 18,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 19,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipesingredients",
+      "pk": 20,
+      "fields": {
+        "name": "Бейдер",
+        "measure": "Дэн"
+      }
+    }
+  ]
+  

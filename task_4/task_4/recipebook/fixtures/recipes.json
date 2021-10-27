@@ -1,0 +1,165 @@
+[
+    {
+      "model": "recipebook.recipes",
+      "pk": 1,
+      "fields": {
+        "name": "Брауни",
+        // TODO перенос строк
+        // TODO обновить данные
+        "recipe_text": "Один из самых популярных десертов в мире — брауни — был придуман в 1893 году на кухне легендарного отеля Palmer House в Чикаго. Этот пирог там пекут до сих пор по оригинальному рецепту, покрывая сверху абрикосовой глазурью."
+      }
+    },
+    {
+      "model": "recipebook.recipes",
+      "pk": 2,
+      "fields": {
+        "name": "",
+        "recipe_text": ""
+      }
+    },
+    {
+      "model": "recipebook.recipes",
+      "pk": 3,
+      "fields": {
+        "name": "Коричневый сахар",
+        "recipe_text": "г."
+      }
+    },
+    {
+      "model": "recipebook.recipes",
+      "pk": 4,
+      "fields": {
+        "name": "Куриное яйцо",
+        "recipe_text": "шт."
+      }
+    },
+    {
+      "model": "recipebook.recipes",
+      "pk": 5,
+      "fields": {
+        "name": "Пшеничная мука",
+        "recipe_text": "г."
+      }
+    },
+    {
+      "model": "recipebook.recipes",
+      "pk": 6,
+      "fields": {
+        "name": "Грецкие орехи",
+        "recipe_text": "г."
+      }
+    },
+    {
+      "model": "recipebook.recipes",
+      "pk": 7,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+    {
+      "model": "recipebook.recipes",
+      "pk": 8,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+    {
+      "model": "recipebook.recipes",
+      "pk": 9,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+    {
+      "model": "recipebook.recipes",
+      "pk": 10,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 11,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 12,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 13,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 14,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 15,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 16,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 17,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 18,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 19,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    },
+        {
+      "model": "recipebook.recipes",
+      "pk": 20,
+      "fields": {
+        "name": "Бейдер",
+        "recipe_text": "Дэн"
+      }
+    }
+  ]
+  
