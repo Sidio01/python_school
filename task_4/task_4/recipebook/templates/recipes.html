@@ -1,0 +1,35 @@
+<!-- https://www.prismamarket.ru/recipes/ -->
+{% extends 'base.html' %}
+{% block title %}
+    {{ action }}
+{% endblock %}
+{% block h1 %}
+    {{ action }}
+{% endblock %}
+{% block content %}
+    {% if all_recipes|length > 0 %}
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Recipe text</td>
+            </tr>
+        </thead>
+        <tbody>
+        {% for recipe in all_recipes %}
+            <tr>
+                <td>{{ recipe.id }}</td>
+                <td>{{ recipe.name }}</td>
+                <td>{{ recipe.description }}</td>
+                <td>{{ recipe.recipe_text }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+    {% else %}
+    <span>No data.</span>
+    {% endif %}
+{% endblock %}

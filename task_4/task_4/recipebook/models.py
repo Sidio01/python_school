@@ -7,17 +7,19 @@ class Ingredients(models.Model):
     # 1. id
     # 2. наименование (name)
     # 3. единица измерения (measure)
-
-    pass
+    name = models.CharField("Наименование", max_length=100, null=False)
+    measure = models.CharField("Единица измерения", max_length=10, null=False)
 
 
 class Recipes(models.Model):
     # Модель - рецепты
     # 1. id
     # 2. наименование (name)
-    # 3. текст рецепта (recipe_text)
-
-    pass
+    # 3. описание (description)
+    # 4. текст рецепта (recipe_text)
+    name = models.CharField("Наименование", max_length=200, null=False)
+    description = models.TextField("Описание", null=False)
+    recipe_text = models.TextField("Текст рецепта", null=False)
 
 
 class RecipesIngredients(models.Model):
@@ -26,5 +28,6 @@ class RecipesIngredients(models.Model):
     # 2. id рецепта (recipe_id)
     # 3. id ингредиента (ingredient_id)
     # 4. количество (amount)
-
-    pass
+    recipe_id = models.ForeignKey(Recipes, on_delete=models.CASCADE)
+    ingredient_id = models.ForeignKey(Ingredients, on_delete=models.CASCADE)
+    amount = models.IntegerField(null=False)

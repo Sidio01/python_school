@@ -1,164 +1,170 @@
 [
-    {
-      "model": "recipebook.ingredients",
-      "pk": 1,
-      "fields": {
-        "name": "Темный шоколад",
-        "measure": "г."
-      }
-    },
-    {
-      "model": "recipebook.ingredients",
-      "pk": 2,
-      "fields": {
-        "name": "Сливочное масло",
-        "measure": "г."
-      }
-    },
-    {
-      "model": "recipebook.ingredients",
-      "pk": 3,
-      "fields": {
-        "name": "Коричневый сахар",
-        "measure": "г."
-      }
-    },
-    {
-      "model": "recipebook.ingredients",
-      "pk": 4,
-      "fields": {
-        "name": "Куриное яйцо",
-        "measure": "шт."
-      }
-    },
-    {
-      "model": "recipebook.ingredients",
-      "pk": 5,
-      "fields": {
-        "name": "Пшеничная мука",
-        "measure": "г."
-      }
-    },
-    {
-      "model": "recipebook.ingredients",
-      "pk": 6,
-      "fields": {
-        "name": "Грецкие орехи",
-        "measure": "г."
-      }
-    },
-    {
-      "model": "recipebook.ingredients",
-      "pk": 7,
-      "fields": {
-                // TODO обновить данные
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-    {
-      "model": "recipebook.ingredients",
-      "pk": 8,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-    {
-      "model": "recipebook.ingredients",
-      "pk": 9,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-    {
-      "model": "recipebook.ingredients",
-      "pk": 10,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 11,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 12,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 13,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 14,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 15,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 16,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 17,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 18,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 19,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.ingredients",
-      "pk": 20,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
+  {
+    "model": "recipebook.ingredients",
+    "pk": 1,
+    "fields": {
+      "name": "Куриное яйцо",
+      "measure": "шт."
     }
-  ]
-  
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 2,
+    "fields": {
+      "name": "Молоко",
+      "measure": "мл."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 3,
+    "fields": {
+      "name": "Пшеничная мука",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 4,
+    "fields": {
+      "name": "Сахар",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 5,
+    "fields": {
+      "name": "Молотый кардамон",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 6,
+    "fields": {
+      "name": "Соль",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 7,
+    "fields": {
+      "name": "Сливочное масло",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 8,
+    "fields": {
+      "name": "Яблоки",
+      "measure": "шт."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 9,
+    "fields": {
+      "name": "Корица",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 10,
+    "fields": {
+      "name": "Лук",
+      "measure": "шт."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 11,
+    "fields": {
+      "name": "Белое вино",
+      "measure": "мл."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 12,
+    "fields": {
+      "name": "Куриный бульон",
+      "measure": "мл."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 13,
+    "fields": {
+      "name": "Хлеб",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 14,
+    "fields": {
+      "name": "Твёрдый сыр",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 15,
+    "fields": {
+      "name": "Картофель",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 16,
+    "fields": {
+      "name": "Солёные огурцы",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 17,
+    "fields": {
+      "name": "Сметана",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 18,
+    "fields": {
+      "name": "Майонез",
+      "measure": "мл."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 19,
+    "fields": {
+      "name": "Лимонный сок",
+      "measure": "мл."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 20,
+    "fields": {
+      "name": "Горчица",
+      "measure": "г."
+    }
+  },
+  {
+    "model": "recipebook.ingredients",
+    "pk": 21,
+    "fields": {
+      "name": "Соль",
+      "measure": "г."
+    }
+  }
+]

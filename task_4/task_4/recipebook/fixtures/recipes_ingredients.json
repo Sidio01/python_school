@@ -1,165 +1,236 @@
 [
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 1,
-              // TODO обновить данные
-      "fields": {
-        "recipe_id": "Темный шоколад",
-        "ingredient_id": "г.",
-        "amount": "Темный шоколад"
-      }
-    },
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 2,
-      "fields": {
-        "name": "Сливочное масло",
-        "measure": "г."
-      }
-    },
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 3,
-      "fields": {
-        "name": "Коричневый сахар",
-        "measure": "г."
-      }
-    },
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 4,
-      "fields": {
-        "name": "Куриное яйцо",
-        "measure": "шт."
-      }
-    },
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 5,
-      "fields": {
-        "name": "Пшеничная мука",
-        "measure": "г."
-      }
-    },
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 6,
-      "fields": {
-        "name": "Грецкие орехи",
-        "measure": "г."
-      }
-    },
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 7,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 8,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 9,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-    {
-      "model": "recipebook.recipesingredients",
-      "pk": 10,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 11,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 12,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 13,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 14,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 15,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 16,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 17,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 18,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 19,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
-    },
-        {
-      "model": "recipebook.recipesingredients",
-      "pk": 20,
-      "fields": {
-        "name": "Бейдер",
-        "measure": "Дэн"
-      }
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 1,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 1,
+      "amount": 1
     }
-  ]
-  
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 2,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 2,
+      "amount": 100
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 3,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 3,
+      "amount": 60
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 4,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 4,
+      "amount": 15
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 5,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 5,
+      "amount": 2.5
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 6,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 6,
+      "amount": 2.5
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 7,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 7,
+      "amount": 30
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 8,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 8,
+      "amount": 1
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 9,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 9,
+      "amount": 2.5
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 10,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 10,
+      "amount": 4
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 11,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 7,
+      "amount": 50
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 12,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 4,
+      "amount": 15
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 13,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 11,
+      "amount": 200
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 14,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 12,
+      "amount": 1000
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 15,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 13,
+      "amount": 200
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 16,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 14,
+      "amount": 150
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 17,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 15,
+      "amount": 800
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 18,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 8,
+      "amount": 1
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 19,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 16,
+      "amount": 150
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 20,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 10,
+      "amount": 1
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 21,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 17,
+      "amount": 200
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 22,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 18,
+      "amount": 100
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 23,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 19,
+      "amount": 15
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 24,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 20,
+      "amount": 15
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 25,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 4,
+      "amount": 5
+    }
+  },
+  {
+    "model": "recipebook.recipesingredients",
+    "pk": 26,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 21,
+      "amount": 5
+    }
+  }
+]
