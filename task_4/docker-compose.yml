@@ -1,4 +1,4 @@
-version: '3.7.9'
+version: '3.7'
 
 services:
 
@@ -13,8 +13,7 @@ services:
       - ./task_4:/task_4
     env_file:
       - .env
-    command: >
-      sh -c 'watchmedo auto-restart --directory=./ --pattern=*.py --recursive -- python manage.py runserver 0.0.0.0:8000'
+    command: python manage.py runserver 0.0.0.0:8000
     links:
       - db
     depends_on:
@@ -22,7 +21,7 @@ services:
 
   # Database
   db:
-    image: postgres:14-alpine
+    image: postgres:14
     environment:
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_USER=${POSTGRES_USER}
