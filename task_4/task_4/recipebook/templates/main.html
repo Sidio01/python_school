@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block form %}
+
+<form method="get">
+    {{ recipe_filter.form }}
+    <button type="submit" class="btn btn-primary">Поиск</button>
+</form>
+
+{% endblock %}
+
+
+{% block content %}
+{% if recipes_ingredients|length > 0 %}
+
+<div class="container">
+    {% for recipe in recipes_ingredients %}
+    <div class="row">
+        <div class="my-auto col">
+            <img src="{{ recipe.recipe_id.image }}" width=85% height=auto />
+        </div>
+        <div class="col">
+            <h3><a href="/recipe/{{ recipe.recipe_id.id }}">{{ recipe.recipe_id.name }}</a></h3>
+        </div>
+        <div class="col">
+            {{ recipe.recipe_id.description }}
+        </div>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+{% else %}
+<div class="container">
+    <div class="row">
+        <div class="mx-auto col">
+            В выбранном рецепте отсутствует данный ингредиент.
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

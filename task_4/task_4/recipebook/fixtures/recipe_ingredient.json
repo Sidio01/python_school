@@ -1,6 +1,6 @@
 [
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 1,
     "fields": {
       "recipe_id": 1,
@@ -9,7 +9,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 2,
     "fields": {
       "recipe_id": 1,
@@ -18,7 +18,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 3,
     "fields": {
       "recipe_id": 1,
@@ -27,7 +27,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 4,
     "fields": {
       "recipe_id": 1,
@@ -36,7 +36,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 5,
     "fields": {
       "recipe_id": 1,
@@ -45,7 +45,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 6,
     "fields": {
       "recipe_id": 1,
@@ -54,7 +54,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 7,
     "fields": {
       "recipe_id": 1,
@@ -63,7 +63,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 8,
     "fields": {
       "recipe_id": 1,
@@ -72,7 +72,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 9,
     "fields": {
       "recipe_id": 1,
@@ -81,7 +81,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 10,
     "fields": {
       "recipe_id": 2,
@@ -90,7 +90,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 11,
     "fields": {
       "recipe_id": 2,
@@ -99,7 +99,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 12,
     "fields": {
       "recipe_id": 2,
@@ -108,7 +108,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 13,
     "fields": {
       "recipe_id": 2,
@@ -117,7 +117,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 14,
     "fields": {
       "recipe_id": 2,
@@ -126,7 +126,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 15,
     "fields": {
       "recipe_id": 2,
@@ -135,7 +135,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 16,
     "fields": {
       "recipe_id": 2,
@@ -144,7 +144,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 17,
     "fields": {
       "recipe_id": 3,
@@ -153,7 +153,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 18,
     "fields": {
       "recipe_id": 3,
@@ -162,7 +162,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 19,
     "fields": {
       "recipe_id": 3,
@@ -171,7 +171,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 20,
     "fields": {
       "recipe_id": 3,
@@ -180,7 +180,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 21,
     "fields": {
       "recipe_id": 3,
@@ -189,7 +189,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 22,
     "fields": {
       "recipe_id": 3,
@@ -198,7 +198,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 23,
     "fields": {
       "recipe_id": 3,
@@ -207,7 +207,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 24,
     "fields": {
       "recipe_id": 3,
@@ -216,7 +216,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 25,
     "fields": {
       "recipe_id": 3,
@@ -225,7 +225,7 @@
     }
   },
   {
-    "model": "recipebook.recipesingredients",
+    "model": "recipebook.recipeingredient",
     "pk": 26,
     "fields": {
       "recipe_id": 3,

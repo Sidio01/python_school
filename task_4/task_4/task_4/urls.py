@@ -19,6 +19,7 @@ import recipebook.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", recipebook.views.home, name="home"),
-    path("recipes", recipebook.views.recipes, name="recipes"),
+    path("", recipebook.views.main_page),
+    path("recipe/<int:recipe_id>/", recipebook.views.get_recipe_page),
+    
 ]

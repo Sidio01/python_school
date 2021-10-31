@@ -1,0 +1,31 @@
+version: '3.7.9'
+
+services:
+
+  # The application
+  task_4:
+    build:
+      context: .
+    image: &task_4 task_4
+    ports:
+      - 8000:8000
+    volumes:
+      - ./task_4:/task_4
+    env_file:
+      - .env
+    command: >
+      sh -c 'watchmedo auto-restart --directory=./ --pattern=*.py --recursive -- python manage.py runserver 0.0.0.0:8000'
+    links:
+      - db
+    depends_on:
+      - db
+
+  # Database
+  db:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - 5432:5432

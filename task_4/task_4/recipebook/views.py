@@ -1,13 +1,39 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from recipebook.models import Recipes, Ingredients, RecipesIngredients
+
+from recipebook.models import RecipeIngredient
+from recipebook.filters import RecipeFilter
 
 
-def home(request):
-    return HttpResponse("Hello, You're at the home page.")
+def main_page(request):
+    """Список рецептов с фильтрацией по названию и ингредиентам."""
 
-def recipes(request):
-    recipes = Recipes.objects.all()
-    # return HttpResponse("Hello, You're at the recipes page.")
-    # return HttpResponse(recipe)
-    return render(request, 'recipes.html', {'action': 'Display all recipes', 'all_recipes': recipes})
+    recipes_objects = RecipeIngredient.objects.select_related(
+        'recipe_id', 'ingredient_id')
+    recipe_filter = RecipeFilter(request.GET, queryset=recipes_objects)
+    recipes_objects = recipe_filter.qs.distinct("recipe_id")
+
+    return render(request,
+                  'main.html',
+                  {
+                      'title': 'Каталог рецептов',
+                      "recipes_ingredients": recipes_objects,
+                      "recipe_filter": recipe_filter,
+                      "form_description": "Здесь вы можете ознакомиться с каталогом рецептов",
+                  })
+
+
+def get_recipe_page(request, recipe_id):
+    """Страница рецепта."""
+    recipe = RecipeIngredient.objects.select_related(
+        'recipe_id', 'ingredient_id').filter(recipe_id=recipe_id)
+    title = recipe[0].recipe_id.name
+    image = recipe[0].recipe_id.image
+    recipe_text = recipe[0].recipe_id.recipe_text.replace('\\n', '\n')
+
+    return render(request, 'recipe.html',
+                  {
+                      'recipe': recipe,
+                      'title': title,
+                      'image': image,
+                      'recipe_text': recipe_text,
+                  })
